@@ -20,5 +20,8 @@
     <string name="bCE">CE</string>
     <string name="bMem">M</string>
     <string name="bMemDel">MC</string>
+    <string name="bSeno">SEN</string>
+    <string name="bCoseno">COS</string>
+    <string name="bRaiz">Sqrt</string>
 
 </resources>

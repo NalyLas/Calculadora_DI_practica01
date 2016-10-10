@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPantalla"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:elevation="0dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="serif-monospace"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:textSize="14sp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:text="@string/bSeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btSeno"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:onClick="leeSen" />
+
+                <Button
+                    android:text="@string/bCoseno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btCoseno"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:onClick="leeCos" />
+
+                <Button
+                    android:text="@string/bRaiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button7"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="leeRaiz" />
+
+                <Button
+                    android:text="@string/bdiv"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btdivide"
+                    tools:text="@string/bdiv"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeSigno"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="14sp"
+                    android:typeface="sans"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorSing" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt7"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/b7"
+                    android:text="@string/b7"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/b8"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt8"
+                    tools:text="@string/b8"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/b9"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt9"
+                    tools:text="@string/b9"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/bmult"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btmultiplica"
+                    tools:text="@string/bmult"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeSigno"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="14sp"
+                    android:typeface="sans"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorSing" />
+
+                <Button
+                    android:text="@string/bMem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="leeMemoria"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="@string/b4"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt4"
+                    tools:text="@string/b4"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/b5"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt5"
+                    tools:text="@string/b5"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/b6"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt6"
+                    tools:text="@string/b6"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/bmenos"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btresta"
+                    tools:text="@string/bmenos"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeSigno"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="14sp"
+                    android:typeface="sans"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorSing" />
+
+                <Button
+                    android:text="@string/bMemDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button2"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/colorAccent"
+                    android:onClick="borraMemoria"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="@string/b1"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt1"
+                    tools:text="@string/b1"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/b2"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt2"
+                    tools:text="@string/b2"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/b3"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt3"
+                    tools:text="@string/b3"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/bmas"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btsuma"
+                    tools:text="@string/bmas"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeSigno"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="14sp"
+                    android:typeface="sans"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorSing" />
+
+                <Button
+                    android:text="@string/bC"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btborrar"
+                    tools:text="@string/bC"
+                    android:layout_height="wrap_content"
+                    android:onClick="borrarTodo"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="?android:attr/colorMultiSelectHighlight"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <Button
+                    android:text="@string/b0"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bt0"
+                    tools:text="@string/b0"
+                    android:layout_height="wrap_content"
+                    android:onClick="leeNum"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="12sp"
+                    android:padding="0dp" />
+
+                <Button
+                    android:text="@string/bdec"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btdecimal"
+                    tools:text="@string/bdec"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:onClick="leeNum"
+                    android:textSize="12sp"
+                    android:layout_margin="0dp" />
+
+                <Button
+                    android:text="@string/bigual"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btigual"
+                    tools:text="@string/bigual"
+                    android:layout_height="wrap_content"
+                    android:onClick="calcular"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorSing"
+                    android:background="@color/colorBack"
+                    android:textSize="14sp"
+                    android:padding="0dp"
+                    android:layout_weight="0.38" />
+
+                <Button
+                    android:text="@string/bCE"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btDel"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:typeface="sans"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/colorAccent"
+                    android:onClick="borrar"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

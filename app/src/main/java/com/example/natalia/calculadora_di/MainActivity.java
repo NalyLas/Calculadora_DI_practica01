@@ -23,11 +23,36 @@ public class MainActivity extends AppCompatActivity {
         pantalla=(TextView) findViewById(R.id.tvPantalla);
     }
 
+    public void leeSen(View view){
+         if(!pantalla.getText().equals("")) {
+            resultado = Math.sin(Double.parseDouble(pantalla.getText().toString()));
+             String aux = resultado.toString();
+             pantalla.setText(aux);
+        }
+
+    }
+    public void leeCos(View view){
+        if(!pantalla.getText().equals("")) {
+            resultado = Math.cos(Double.parseDouble(pantalla.getText().toString()));
+            String aux = resultado.toString();
+            pantalla.setText(aux);
+        }
+
+    }
+    public void leeRaiz(View view){
+        if(!pantalla.getText().equals("")) {
+            resultado = Math.sqrt(Double.parseDouble(pantalla.getText().toString()));
+            String aux = resultado.toString();
+            pantalla.setText(aux);
+        }
+
+    }
+
     public void leeNum(View view){
             TextView num = (TextView) findViewById (view.getId());
             String act = pantalla.getText().toString();
 
-        if(pantalla.getText().toString().equals("0")){
+        if(pantalla.getText().toString().equals("0") || pantalla.getText().toString().equals("0.0") ){
                 pantalla.setText(num.getText());
             }else if(num.getText().toString().equals(".") && !act.contains(".")){
                 pantalla.append(".");
@@ -48,17 +73,16 @@ public class MainActivity extends AppCompatActivity {
             }
             if(bubble==0){
                 bubble = Double.parseDouble(pantalla.getText().toString());
-            }else{
-                if(signo.equals("+")){
+            }else {
+                if (signo.equals("+")) {
                     bubble += Double.parseDouble(pantalla.getText().toString());
-                }else if(signo.equals("-")){
+                } else if (signo.equals("-")) {
                     bubble -= Double.parseDouble(pantalla.getText().toString());
-                }else if(signo.equals("x")){
+                } else if (signo.equals("x")) {
                     bubble *= Double.parseDouble(pantalla.getText().toString());
-                }else if(signo.equals("/")){
+                } else if (signo.equals("/")) {
                     bubble /= Double.parseDouble(pantalla.getText().toString());
                 }
-
             }
 
             pantalla.setText("");
